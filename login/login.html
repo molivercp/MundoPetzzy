@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>  <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light shadow-sm">
+        <div class="container-fluid">
+          <a class="navbar-brand ps-3" href="#">
+            <img src="img/logo (1).png" alt="Mundo-Petzzy">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+            aria-controls="navbarContent" aria-expanded="false" aria-label="Alternar navegação">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse ps-4" id="navbarContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link" href="">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Serviços</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Produtos</a></li>
+            </ul>
+    
+            <form class="d-flex me-3 pe-4 tamanho">
+              <input class="form-control me-2 search-input" type="search" placeholder="Pesquisar produtos" aria-label="Pesquisar">
+              <button class="btn btn-outline-dark" type="submit">Buscar</button>
+            </form>
+    
+            <ul class="navbar-nav pe-4">
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img src="img/pngwing.com.png" class="mb-2 me-1" alt="" style="width: 20px;">Entrar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link position-relative" href="#"><img src="img/306277.png" alt="" class="mb-1 me-1" style="width: 20px;">Adote</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+
+  <div class="container mt-4 mb-4 p-5">
+    <div class="row justify-content-center">
+      <div class="col-12 col-sm-10 col-md-8 col-lg-6 bg-body-secondary rounded-4 shadow-lg p-4">
+        <form>
+          <div class="row mb-3">
+            <label for="inputEmail3" class="col-sm-3 col-form-label"><strong>Email:</strong></label>
+            <div class="col-sm-9">
+              <input type="email" class="form-control" id="inputEmail3">
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <label for="inputPassword3" class="col-sm-3 col-form-label"><strong>Senha:</strong></label>
+            <div class="col-sm-9">
+              <input type="password" class="form-control" id="inputPassword3">
+            </div>
+          </div>
+
+          <fieldset class="row mb-4">
+            <legend class="col-form-label col-sm-3 pt-0"><strong>Convênio:</strong></legend>
+            <div class="col-sm-9">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="planoMundoPetzzy" checked>
+                <label class="form-check-label" for="gridRadios1">Plano Mundo Petzzy</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                <label class="form-check-label" for="gridRadios2">Plano Petlove</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                <label class="form-check-label" for="gridRadios3">Particular</label>
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="row mb-3">
+            <div class="col-12 col-md-6 mb-2">
+              <button type="submit" class="btn btn-primary w-100">Entrar</button>
+            </div>
+            <div class="col-12 col-md-6">
+              <button type="submit" class="btn btn-primary w-100">Esqueci a senha</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+      <footer class="pt-4 pb-4 " style="background-color: #acd6d1;">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-md-6">
+              <p><img src="img/local_nobg.png" alt="" id="imgfooter1">Av Santos Dumont, 2554, Aldeota, Fortaleza.</p>
+              <p><img src="img/tel.png" alt="" id="imgfooter1">85 9 9876 5432</p>
+              <p><img src="img/email_nobg.png" alt="" id="imgfooter1">mundopetzzy@pet.com</p>
+            </div>
+            <div class="col-md-6">
+              <p>Nos siga nas redes:</p>
+              <img src="img/icon_1.png" alt="" id="imgfooter" class="me-2">
+              <img src="img/icon_2.png" alt="" id="imgfooter" class="me-2">
+              <img src="img/icon_3.png" alt="" id="imgfooter" class="me-2">
+            </div>
+          </div>
+        </div>
+      </footer>
+    
+      <footer class="text-center text-light p-1" style="background-color: #845cdc;">Todos os direitos reservados - &copy; Mundo Petzzy - 2025</footer>
+    
+      <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
