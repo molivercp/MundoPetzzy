@@ -202,36 +202,42 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light shadow-sm">
         <div class="container-fluid">
-            <a class="navbar-brand ps-3" href="#">
-                <img src="img/logo (1).png" alt="Mundo-Petzzy">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
-                aria-controls="navbarContent" aria-expanded="false" aria-label="Alternar navegação">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Serviços</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Produtos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Adoção</a>
-                    </li>
-                </ul>
-            </div>
+          <a class="navbar-brand ps-3" href="#">
+            <img src="img/logo (1).png" alt="Mundo-Petzzy">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+            aria-controls="navbarContent" aria-expanded="false" aria-label="Alternar navegação">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse ps-4" id="navbarContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Serviços</a></li>
+              <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
+            </ul>
+    
+            <form class="d-flex me-3 pe-4 tamanho">
+              <input class="form-control me-2 search-input" type="search" placeholder="Pesquisar produtos" aria-label="Pesquisar">
+              <button class="btn btn-outline-dark" type="submit">Buscar</button>
+            </form>
+    
+            <ul class="navbar-nav pe-4">
+              <li class="nav-item">
+                <a class="nav-link" href="../login/login.html"><img src="img/pngwing.com.png" class="mb-2 me-1" alt="" style="width: 20px;">Entrar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link position-relative" href="#"><img src="img/306277.png" alt="" class="mb-1 me-1" style="width: 20px;">Adote</a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </nav>
+      </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section" style="background-color: #e2e2e2;">
+    <section class="hero-section shadow-lg" style="background-color: #e2e2e2;">
         <div class="container-global">
             <h1>Conheça nossos produtos</h1>
         </div>
@@ -394,6 +400,7 @@
             </div>
         </div>
     </footer>
+    <footer class="text-center text-light" style="background-color: #845cdc;">Todos os direitos reservados - &copy; Mundo Petzzy - 2025</footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
