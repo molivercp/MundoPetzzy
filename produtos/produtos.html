@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Mundo Petzzy</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .navbar-brand img {
+            height: 150px;
+            width: 250px;
+        }
+
+        .search-input {
+            width: 600px;
+            height: 50px;
+            font-size: 20px;
+        }
+
+        .search-input::placeholder {
+            font-size: 19px;
+        }
+
+        .navbar {
+            font-size: 25px;
+            height: 80px;
+            background-color: #acd6d1;
+        }
+
+        .btn-outline-success {
+            background-color: black;
+            text-decoration: black;
+        }
+
+        .tamanho {
+            width: 500px;
+        }
+
+        #imgfooter {
+            width: 40px;
+        }
+
+        #imgfooter1 {
+            width: 25px;
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            padding-top: 80px;
+            margin-top: 15px;
+            background-color: rgb(235, 213, 202);
+        }
+
+        .card {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+
+        .hero-section {
+            background-color: #e2e2e2;
+            padding: 60px 0;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            color: #333;
+            font-weight: 600;
+        }
+
+        .catalog-title {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 30px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-card:hover {
+            transform: scale(1.03);
+        }
+
+        .product-image {
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .product-title {
+            font-weight: 500;
+            margin-bottom: 10px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .btn-ver-mais {
+            background-color: black;
+            color: white;
+            padding: 5px 15px;
+            font-size: 0.9rem;
+            border: none;
+            border-radius: 4px;
+        }
+
+        .btn-ver-mais:hover {
+            background-color: #333;
+            color: white;
+        }
+
+        .container-global {
+            width: 100%;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        /* RESPONSIVIDADE */
+        @media (max-width: 768px) {
+            .navbar-brand img {
+                height: 80px;
+                width: 130px;
+            }
+
+            .search-input {
+                width: 100%;
+                font-size: 16px;
+                height: 40px;
+            }
+
+            .search-input::placeholder {
+                font-size: 16px;
+            }
+
+            .tamanho {
+                width: 100%;
+            }
+
+            .navbar {
+                font-size: 18px;
+                height: auto;
+            }
+
+            #imgfooter {
+                width: 30px;
+            }
+
+            #imgfooter1 {
+                width: 18px;
+                height: 18px;
+            }
+
+            body {
+                font-size: 16px;
+            }
+
+            .card {
+                margin: 10px;
+            }
+
+            .img-card {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .card-fixed {
+                height: 400px;
+            }
+
+            .product-image {
+                height: 160px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand ps-3" href="#">
+                <img src="img/logo (1).png" alt="Mundo-Petzzy">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Adoção</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" style="background-color: #e2e2e2;">
+        <div class="container-global">
+            <h1>Conheça nossos produtos</h1>
+        </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section class="container-global mb-5">
+        <h2 class="catalog-title">Catálogo</h2>
+        
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://petnanetbenipet.vteximg.com.br/arquivos/ids/163940-1000-1000/Shampoo_Sanol_Dog_Neutro_-_500_mL.jpg?v=637316491829000000" alt="Shampoo Sanol Dog Neutro">
+                    </div>
+                    <h5 class="product-title">Shampoo Sanol Dog Neutro</h5>
+                    <button class="btn btn-ver-mais">Ver mais</button>
+                </div>
+            </div>
+            
+            <!-- Product 2 -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_930221-MLB49161401129_022022-F-coleira-para-cachorro-com-identificaco-personalizado-nome.webp" alt="Coleira para Cachorro Personalizada">
+                    </div>
+                    <h5 class="product-title">Coleira Personalizada</h5>
+                    <button class="btn btn-ver-mais">Ver mais</button>
+                </div>
+            </div>
+            
+            <!-- Product 3 -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://ae-pic-a1.aliexpress-media.com/kf/S282ea8edaafc431384e0f0389ee7849el.jpg_960x960q75.jpg_.avif" alt="Coleira peitoral">
+                    </div>
+                    <h5 class="product-title">Coleira peitoral para Pets</h5>
+                    <button class="btn btn-ver-mais">Ver mais</button>
+                </div>
+            </div>
+            
+            <!-- Product 4 -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_803683-MLU79309399679_092024-F.webp" alt="Cama para chachorros">
+                    </div>
+                    <h5 class="product-title">Cama para cachorros</h5>
+                    <button class="btn btn-ver-mais">Ver mais</button>
+                </div>
+            </div>
+            
+            <!-- Product 5 -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_696039-MLA80923901161_112024-F.webp" alt="Colonia Sanol">
+                    </div>
+                    <h5 class="product-title">Colônia Sanol</h5>
+                    <button class="btn btn-ver-mais">Ver mais</button>
+                </div>
+            </div>
+            
+            <!-- Product 6 -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_605509-MLB53355369337_012023-F.webp" alt="Ração Golden">
+                    </div>
+                    <h5 class="product-title">Ração Golden</h5>
+                    <button class="btn btn-ver-mais">Ver mais</button>
+                </div>
+            </div>
+            
+            <!-- Product 7 -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_809557-MLU79174974785_092024-F.webp" alt="Ração Pedgree">
+                    </div>
+                    <h5 class="product-title">Ração Pedgree</h5>
+                    <button class="btn btn-ver-mais">Ver mais</button>
+                </div>
+            </div>
+            
+            <!-- Product 8 -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_959060-MLU77962107831_072024-F.webp" alt="Ração VittaMax">
+                    </div>
+                    <h5 class="product-title">Ração VittaMax</h5>
+                    <button class="btn btn-ver-mais">Ver mais</button>
+                </div>
+            </div>
+            
+            <!-- Product 9 -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_813204-MLB50816088256_072022-F.webp" alt="Ração Supreme">
+                    </div>
+                    <h5 class="product-title">Ração Supreme</h5>
+                    <button class="btn btn-ver-mais">Ver mais</button>
+                </div>
+            </div>
+            
+            <!-- Product 10 -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_798995-MLU71529528024_092023-F.webp" alt="Ração Sapeca">
+                    </div>
+                    <h5 class="product-title">Ração Sapeca</h5>
+                    <button class="btn btn-ver-mais">Ver mais</button>
+                </div>
+            </div>
+            
+            <!-- Product 11 -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://a-static.mlcdn.com.br/1500x1500/racao-premium-para-cachorro-dog-chow-extralife-filhote-carne-frango-e-arroz-1kg/magazineluiza/233502000/2a8707f54c5eac33db037fe90e822f58.jpg" alt="Ração Dog Chow">
+                    </div>
+                    <h5 class="product-title">Ração Dog Chow Filhotes</h5>
+                    <button class="btn btn-ver-mais">Ver mais</button>
+                </div>
+            </div>
+            
+            <!-- Product 12 -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://th.bing.com/th/id/OIP.bcnmP8C5706P_0vRJTvFrgHaHa?rs=1&pid=ImgDetMain" alt="Ração Premier">
+                    </div>
+                    <h5 class="product-title">Ração Premier</h5>
+                    <button class="btn btn-ver-mais">Ver mais</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pt-4 pb-4" style="background-color: #acd6d1;">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-6">
+                    <p><img src="img/local_nobg.png" alt="" id="imgfooter1">Av Santos Dumont, 2554, Aldeota, Fortaleza.</p>
+                    <p><img src="img/tel.png" alt="" id="imgfooter1">85 9 9876 5432</p>
+                    <p><img src="img/email_nobg.png" alt="" id="imgfooter1">mundopetzzy@pet.com</p>
+                </div>
+                <div class="col-md-6">
+                    <p>Nos siga nas redes:</p>
+                    <img src="img/icon_1.png" alt="" id="imgfooter" class="me-2">
+                    <img src="img/icon_2.png" alt="" id="imgfooter" class="me-2">
+                    <img src="img/icon_3.png" alt="" id="imgfooter" class="me-2">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
