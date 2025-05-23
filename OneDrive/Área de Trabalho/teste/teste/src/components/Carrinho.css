@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+#BotaoCodigo {
+
+width: 270px;
+height: 60px;
+background-color: #F5F5F5;
+border: 0;
+}
+
+#BotaoOk {
+    width: 114px ;
+    height: 60px;
+    background-color: #F5F5F5;
+    color: #C92071;
+    font-weight: 700;
+    
+}
